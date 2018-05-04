@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-title>Your Name is: {{myStatus}}</ion-title>
+    <button ion-button (click)="updateStatus()">Update Name!</button>
+    <br>
+    <button ion-button (click)="openSudokuEasy()">Sudoku easy!</button>
+    <br>
+    <button ion-button (click)="openSudokuMedium()">Sudoku Medium!</button>
+    <br>
+    <button ion-button (click)="openSudokuHard()">Sudoku Hard!</button>
+    <br>
+    <ion-title>The name of your movie is:</ion-title>
+    <input [(ngModel)]="mySearch" size="40">
+    <button ion-button (click)="saveSearch()">Search</button>
+
+    
+</ion-content>

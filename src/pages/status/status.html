@@ -1,0 +1,14 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>status</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-title>Your Name is:</ion-title>
+        <input [(ngModel)]="myStatus" size="40">
+        <button ion-button (click)="saveStatus()">Save</button>
+    </ion-content>
